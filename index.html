@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Римма Жекшебаева - Профессиональное резюме</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2C3E50;
+            --primary-light: #34495E;
+            --secondary: #3498DB;
+            --dark: #2C3E50;
+            --light: #ECF0F1;
+            --white: #FFFFFF;
+            --gray: #95A5A6;
+            --accent: #E74C3C;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .resume-card {
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--white);
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .title {
+            font-weight: 300;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .contacts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 3rem 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light);
+        }
+
+        .item {
+            margin-bottom: 1.5rem;
+        }
+
+        .item-title {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: var(--dark);
+        }
+
+        .item-subtitle {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill {
+            background: var(--light);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--primary);
+        }
+
+        .documents {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .document {
+            border: 1px solid var(--light);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .document:hover {
+            transform: translateY(-5px);
+        }
+
+        .document-img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid var(--light);
+        }
+
+        .document-title {
+            padding: 0.8rem;
+            text-align: center;
+            background: var(--light);
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--primary);
+            color: var(--white);
+            font-size: 0.9rem;
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section {
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        .section:nth-child(1) { animation-delay: 0.1s; }
+        .section:nth-child(2) { animation-delay: 0.2s; }
+        .section:nth-child(3) { animation-delay: 0.3s; }
+        .section:nth-child(4) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="resume-card">
+            <div class="header">
+                <div class="profile">
+                    <img src="d:\Резюме\photo_2025-06-28_17-00-38(1)(1).png" alt="Фото" class="photo">
+                    <h1>Жекшебаева Римма Алмазбековна</h1>
+                    <div class="title">Специалист по прикладной информатике</div>
+                    <div class="contacts">
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"/>
+                            </svg>
+                            <span>11.08.2003</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/>
+                            </svg>
+                            <span>0554557703</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"/>
+                            </svg>
+                            <span>almazbekovarimma@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
+                            </svg>
+                            <span>_a1mazbekovvva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left-column">
+                    <div class="section">
+                        <h2>Образование</h2>
+                        <div class="item">
+                            <div class="item-title">Сибирский федеральный университет</div>
+                            <div class="item-subtitle">2021 - настоящее время</div>
+                            <p>Институт ИУБП, направление: Прикладная информатика - Цифровая технология</p>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">Средняя школа № 45</div>
+                            <div class="item-subtitle">2009 - 2021</div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Документы об образовании</h2>
+                        <div class="documents">
+                            <div class="document">
+                                <img src="d:\Резюме\photo_2025-07-13_15-54-58.jpg" alt="Аттестат" class="document-img">
+                                <div class="document-title">Аттестат о среднем образовании</div>
+                            </div>
+                            <div class="document">
+                                <img src="d:\Резюме\lbgkjv.jpg" alt="Диплом" class="document-img">
+                                <div class="document-title">Диплом университета</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Навыки</h2>
+                        <div class="skills">
+                            <span class="skill">Python</span>
+                            <span class="skill">C#</span>
+                            <span class="skill">PostgreSQL</span>
+                            <span class="skill">Oracle</span>
+                            <span class="skill">Visual Studio</span>
+                            <span class="skill">Clubis</span>
+                            <span class="skill">Mobifitness</span>
+                            <span class="skill">iClub</span>
+                            <span class="skill">HTML/CSS</span>
+                            <span class="skill">JavaScript</span>
+                            <span class="skill">C1</span>
+                            <span class="skill">Excel</span>
+                            <span class="skill">World</span>
+                            <span class="skill">PowerPoint</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="section">
+                        <h2>Опыт работы</h2>
+                        <div class="item">
+                            <div class="item-title">Менеджер отдела продаж</div>
+                            <div class="item-subtitle">Фитнес-клуб | 2-3 год</div>
+                            <p>Управление отделом продаж, аналитика, работа с клиентами</p>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">Администратор</div>
+                            <div class="item-subtitle">Фитнес-клуб | 1-2 года</div>
+                            <p>Организация рабочего процесса, работа с клиентами</p>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">Помощница в консульстве</div>
+                            <p>Документооборот, организационная работа</p>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">Редактор, копирайтер</div>
+                            <p>Создание контента для соцсетей (Инстаграм, ВК, Телеграм)</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Проекты</h2>
+                        <div class="item">
+                            <div class="item-title">Сайт ресторана</div>
+                            <p>Полный цикл разработки от дизайна до реализации</p>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">Чат-бот для фитнес-клуба</div>
+                            <p>Автоматизация процессов записи и консультаций</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Достижения</h2>
+                        <div class="item">
+                            <div class="item-title">Волонтер на международных мероприятиях</div>
+                            <p>Дельфийские игры, Зарзуби и др</p>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">Организатор студенческих мероприятий</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                © 2025 Римма Жекшебаева | Все права защищены
+            </div>
+        </div>
+    </div>
+</body>
+</html>
